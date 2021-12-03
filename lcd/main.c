@@ -139,11 +139,12 @@ void main()
 	    secCount = 0;
 	    redrawScreen3 = 0;
 	  }
-	  drawString5x7(screenWidth/2-48, screenHeight/2-10,"Press S2 to move", COLOR_BLACK, COLOR_WHITE);
-	  drawString5x7(screenWidth/2-30, screenHeight/2-2,"to the left", COLOR_BLACK, COLOR_WHITE);
-	  drawString5x7(screenWidth/2-48, screenHeight/2+10,"Press S3 to move", COLOR_BLACK, COLOR_WHITE);
-	  drawString5x7(screenWidth/2-35, screenHeight/2+20,"to the right", COLOR_BLACK, COLOR_WHITE);
+	  drawString5x7(screenWidth/2-48, screenHeight/2-10,"Press S2 to move", COLOR_BLUE, COLOR_WHITE);
+	  drawString5x7(screenWidth/2-30, screenHeight/2-2,"to the left", COLOR_BLUE, COLOR_WHITE);
+	  drawString5x7(screenWidth/2-48, screenHeight/2+10,"Press S3 to move", COLOR_RED, COLOR_WHITE);
+	  drawString5x7(screenWidth/2-35, screenHeight/2+20,"to the right", COLOR_RED, COLOR_WHITE);
 	  drawString5x7(screenWidth/2-55, screenHeight/2+30,"Watch pitch change", COLOR_BLACK, COLOR_WHITE);
+	  drawString5x7(screenWidth/2-48, screenHeight/2+40,"Press S4 to quit", COLOR_BLACK, COLOR_WHITE);
 	  break;
 	}
 	break;
