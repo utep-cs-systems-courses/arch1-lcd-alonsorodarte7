@@ -61,7 +61,7 @@ void draw_shape(u_char offc, u_char offr, u_int color, u_int color2)
     }
   }
 
-  /* Tiangle */
+  /* Triangle */
   for(u_char r = 0; r < 10; r++){
     for(u_char c = 0; c <= r; c++){
       drawPixel(offc-c, offr+r+19, color);

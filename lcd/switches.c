@@ -57,7 +57,8 @@ switch_interrupt_handler()
       secCount = 0;
       redrawScreen = 0;
       redrawScreen2 = 0;
-      master = 4;                 /* updated the master state */
+      master = 4;/* updated the master state */
+      buzzer_set_period(1000000);
     }
     else if ((p2val & SW2) == 0){ /* reload Main Menu */
       master = 0;                 /* next few lines update variables */
@@ -109,7 +110,7 @@ switch_interrupt_handler()
       master = 0;                 /* next few lines update variables */
       secCount = 0;
       seconds = 8;
-      P1OUT &= ~RED_LED;          /* i believe the code breaks if this stays on */
+      P1OUT &= ~RED_LED;
       string = "********";
       redrawScreen = 0;
       redrawScreen2 = 0;
@@ -121,7 +122,7 @@ switch_interrupt_handler()
       master = 0;                 /* next few lines update variables */
       secCount = 0;
       seconds = 8;
-      P1OUT &= ~RED_LED;          /* i believe the code breaks if this stays on */
+      P1OUT &= ~RED_LED;         
       string = "********";
       redrawScreen = 0;
       redrawScreen2 = 0;

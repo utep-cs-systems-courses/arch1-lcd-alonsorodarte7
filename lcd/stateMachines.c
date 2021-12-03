@@ -16,6 +16,7 @@ int x = 500;                    /* x set to 0 */
 char *string = "********";
 int colorState = 0;             /* state of the color */
 int movestate = 0;              /* state of the movement */
+
 void color_advance()      /* switch between different color modes */
 {
   switch(colorState){
